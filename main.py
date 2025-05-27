@@ -67,7 +67,7 @@ def main():
             print(f"• Highest volatility: {summary['highest_volatility']['period']} ({summary['highest_volatility']['value']:.2f}%)")
             print(f"• Maximum drawdown: {summary['max_drawdown']['period']} ({summary['max_drawdown']['value']:.2f}%)")
         
-        print(f"\n Analysis complete for instrument {instrument_id}")
+        print(f"\n Analysis completeE for instrument {instrument_id}")
         return 0
         
     except KeyboardInterrupt:
