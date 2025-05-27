@@ -15,9 +15,9 @@ def main():
         instrument_id = sys.argv[1]
     
     print("="*80)
-    print("Finacial performance ")
+    print("Finacial performancee ")
     print("="*80)
-    print(f"Analyzing inis: {instrument_id}")
+    print(f"analyzing inis: {instrument_id}")
     print(f"Periods: YTD, 3M, 6M, 1Y, 3Y")
     
     
@@ -27,13 +27,13 @@ def main():
     try:
         # Step 1: Data Collection
         print("\n" + "="*60)
-        print("STEP 1: DATA COLLECTION")
+        print("StEP 1: DATA COLLECTION")
         print("="*60)
         
         data = collector.collect_justetf_data(instrument_id)
         
         if not data:
-            print(" No data collected....")
+            print(" Noo data collected....")
             return 1
         
         available_periods = collector.get_available_periods(data)
@@ -74,7 +74,7 @@ def main():
         print("\n Analysis interrupted by user")
         return 1
     except Exception as e:
-        print(f"\n Errror analysis: {e}")
+        print(f"\n Errror annalysis: {e}")
         return 1
 
 

@@ -31,7 +31,7 @@ class DataCollector:
                 print(f"Attempt {attempt + 1} failed: {e}")
                 if attempt < retries - 1:
                     import time
-                    time.sleep(2 ** attempt)  
+                    time.sleep(2 ** attempt)  # Exponential backoff
                 else:
                     print(f"Failed to fetch data after {retries} attempts")
                     return None
@@ -75,7 +75,7 @@ class DataCollector:
                 else:
                     pct_change = 0.0
                 
-            
+                # Calculate absolute price from percentage change
                 price = base_price * (1 + pct_change / 100.0)
                 
                 data.append({

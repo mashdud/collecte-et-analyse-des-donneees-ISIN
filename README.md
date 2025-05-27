@@ -8,7 +8,8 @@ Conçu pour calculer les principaux indicateurs financiers, notamment :
 - les rendements attendus,
 - et le drawdown maximal (perte maximale enregistrée).
 
-# 
+# Structure du projet
+
 ├── collector.py        
 ├── analyzer.py         
 ├── main.py                
@@ -17,7 +18,7 @@ Conçu pour calculer les principaux indicateurs financiers, notamment :
 └── README.md           
 
 
-1. Requirements
+# 1. Requirements
 
 Python ≥ 3.7
 Dependencies listed in requirements.txt:
@@ -25,7 +26,7 @@ Dependencies listed in requirements.txt:
 ```bash
 pip install -r requirements.txt
 ```
-2. Installation
+# 2. Installation
 
 Clonez ou téléchargez les fichiers du projet
 
@@ -36,7 +37,7 @@ python -m venv venv
 source venv/bin/activate # Linux/Mac
 .\venv\Scripts\activate # Windows
 ```
-4. Exécution de l'application :
+# 4. Exécution de l'application :
 
 ```bash
 python main.py
@@ -76,20 +77,20 @@ json
 
 -le champseries contient les variations en pourcentage par rapport à la date de base.
 -Le champ price est le prix de base correspondant à 0.0% (c’est-à-dire le point de départ).
-
 Chaque valeur de pourcentage doit être convertie en prix absolu avec la formule suivante :
 
 
 #  Exemple de sortie
-Period  Performance (%)  Volatility (%)  Expected Return (%)  Max Drawdown (%)  Data Points Start Date   End Date
-   YTD            -5.78           17.91                -8.96             20.23          143 2025-01-01 2025-05-23
-    3M            -7.24           21.85               -19.64             18.32           87 2025-02-26 2025-05-23
-    6M            -5.78           16.60                -7.15             20.23          177 2024-11-28 2025-05-23
-    1Y             6.32           14.08                 5.27             20.23          362 2024-05-27 2025-05-23
-    3Y             8.25           13.42                 5.72             20.23          416 2024-04-03 2025-05-23
-================================================================================
-Results exported to financial_metrics_20250527_123256.csv
-Results exported to financial_metrics_20250527_123256.json
+## 📊 Exemple de sortie
+
+| Période | Performance (%) | Volatilité (%) | Rendement Attendu (%) | Max Drawdown (%) | Points de Données | Date de Début | Date de Fin   |
+|---------|------------------|----------------|------------------------|------------------|--------------------|----------------|---------------|
+| YTD     | -5.78            | 17.91          | -8.96                  | 20.23            | 143                | 2025-01-01     | 2025-05-23    |
+| 3M      | -7.24            | 21.85          | -19.64                 | 18.32            | 87                 | 2025-02-26     | 2025-05-23    |
+| 6M      | -5.78            | 16.60          | -7.15                  | 20.23            | 177                | 2024-11-28     | 2025-05-23    |
+| 1Y      | 6.32             | 14.08          | 5.27                   | 20.23
+
+
 
  SUMMARY:
 • Periods analyzed: 5
@@ -103,7 +104,9 @@ Results exported to financial_metrics_20250527_123256.json
 
 
 
-
+#Cette vidéo montre comment j'ai procédé pour **scraper le site web**.  
+La première étape consiste à utiliser l'inspecteur du navigateur pour analyser la structure de la page et identifier la manière dont les données sont chargées.  
+Cela permet de cibler les bons éléments HTML ou appels API avant d’écrire le script de collecte.
 
 https://github.com/user-attachments/assets/02d60d35-6253-43e6-a248-8e371cfb3c93
 
