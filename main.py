@@ -37,7 +37,7 @@ def main():
             return 1
         
         available_periods = collector.get_available_periods(data)
-        print(f"\n✅ Data collection complete. Available periods: {', '.join(available_periods)}")
+        print(f"\n Data collection complete. Available periods: {', '.join(available_periods)}")
         
         # Step 2: Analysis
         print("\n" + "="*60)
