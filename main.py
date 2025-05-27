@@ -6,8 +6,6 @@ from analyzer import FinancialAnalyzer
 
 def main():
    
-    
-    
     instrument_id = "IE0002XZSHO1"  # votre ETF ISIN
     
     
@@ -37,7 +35,7 @@ def main():
             return 1
         
         available_periods = collector.get_availaable_periods(data)
-        print(f"\n Data collection complete...: {', '.join(available_periods)}")
+        print(f"\n Data collection is complete...: {', '.join(available_periods)}")
         
         # Step 2: Analysis
         print("\n" + "="*60)
