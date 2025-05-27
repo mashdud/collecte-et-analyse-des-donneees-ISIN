@@ -20,7 +20,7 @@ class DataCollector:
             "Sec-Fetch-Site": "same-origin"
         }
     
-    def fetch_data(self, url: str, retries: int = 3, timeout: int = 15) -> Optional[Dict]:
+    def fetch_da(self, url: str, retries: int = 3, timeout: int = 15) -> Optional[Dict]:
        
         for attempt in range(retries):
             try:
@@ -101,7 +101,7 @@ class DataCollector:
             url = self._build_justetf_url(instrument_id, start_date, end_date)
             
             print(f"Fetching {period_name} data ({start_date.date()} to {end_date.date()})...")
-            raw_data = self.fetch_data(url)
+            raw_data = self.fetch_da(url)
             
             if raw_data:
                 df = self.parse_justetf_data(raw_data)
@@ -127,6 +127,6 @@ class DataCollector:
             f"&dateTo={end_date.strftime('%Y-%m-%d')}"
         )
     
-    def get_available_periods(self, data: Dict[str, pd.DataFrame]) -> list:
+    def get_availaable_periods(self, data: Dict[str, pd.DataFrame]) -> list:
         
         return [period for period, df in data.items() if not df.empty]

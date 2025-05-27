@@ -94,7 +94,7 @@ class FinancialAnalyzer:
         
         results = []
         
-        # Define the order of periods for consistent output
+        
         period_order = ['YTD', '3M', '6M', '1Y', '3Y']
         
         for period in period_order:

@@ -36,7 +36,7 @@ def main():
             print(" Noo data collected....")
             return 1
         
-        available_periods = collector.get_available_periods(data)
+        available_periods = collector.get_availaable_periods(data)
         print(f"\n Data collection complete...: {', '.join(available_periods)}")
         
         # Step 2: Analysis
@@ -71,7 +71,7 @@ def main():
         return 0
         
     except KeyboardInterrupt:
-        print("\n Analysis interrupted by user")
+        print("\n Analysis issues")
         return 1
     except Exception as e:
         print(f"\n Errror annalysis: {e}")

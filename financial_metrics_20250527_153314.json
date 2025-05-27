@@ -1,0 +1,52 @@
+[
+  {
+    "Period":"YTD",
+    "Performance (%)":-5.78,
+    "Volatility (%)":17.91,
+    "Expected Return (%)":-8.96,
+    "Max Drawdown (%)":20.23,
+    "Data Points":143,
+    "Start Date":"2025-01-01",
+    "End Date":"2025-05-23"
+  },
+  {
+    "Period":"3M",
+    "Performance (%)":-7.24,
+    "Volatility (%)":21.85,
+    "Expected Return (%)":-19.64,
+    "Max Drawdown (%)":18.32,
+    "Data Points":87,
+    "Start Date":"2025-02-26",
+    "End Date":"2025-05-23"
+  },
+  {
+    "Period":"6M",
+    "Performance (%)":-5.78,
+    "Volatility (%)":16.6,
+    "Expected Return (%)":-7.15,
+    "Max Drawdown (%)":20.23,
+    "Data Points":177,
+    "Start Date":"2024-11-28",
+    "End Date":"2025-05-23"
+  },
+  {
+    "Period":"1Y",
+    "Performance (%)":6.32,
+    "Volatility (%)":14.08,
+    "Expected Return (%)":5.27,
+    "Max Drawdown (%)":20.23,
+    "Data Points":362,
+    "Start Date":"2024-05-27",
+    "End Date":"2025-05-23"
+  },
+  {
+    "Period":"3Y",
+    "Performance (%)":8.25,
+    "Volatility (%)":13.42,
+    "Expected Return (%)":5.72,
+    "Max Drawdown (%)":20.23,
+    "Data Points":416,
+    "Start Date":"2024-04-03",
+    "End Date":"2025-05-23"
+  }
+]
