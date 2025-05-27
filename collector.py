@@ -75,7 +75,7 @@ class DataCollector:
                 else:
                     pct_change = 0.0
                 
-                # Calculate absolute price from percentage change
+            
                 price = base_price * (1 + pct_change / 100.0)
                 
                 data.append({

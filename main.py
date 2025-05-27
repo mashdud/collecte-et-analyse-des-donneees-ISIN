@@ -37,7 +37,7 @@ def main():
             return 1
         
         available_periods = collector.get_available_periods(data)
-        print(f"\n Data collection complete. Available periods: {', '.join(available_periods)}")
+        print(f"\n Data collection complete...: {', '.join(available_periods)}")
         
         # Step 2: Analysis
         print("\n" + "="*60)
@@ -51,10 +51,10 @@ def main():
         print("STEP 3: RESULTS")
         print("="*60)
         
-        # Display results in console
+        
         analyzer.export_results(results, 'console')
         
-        # Export to files
+        
         analyzer.export_results(results, 'csv')
         analyzer.export_results(results, 'json')
         
@@ -74,7 +74,7 @@ def main():
         print("\n Analysis interrupted by user")
         return 1
     except Exception as e:
-        print(f"\n❌ Error analysis: {e}")
+        print(f"\n Errror analysis: {e}")
         return 1
 
 
